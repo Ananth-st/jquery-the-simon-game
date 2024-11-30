@@ -11,19 +11,41 @@
     />
   </head>
   <body>
-    <h1 id="title">Press A key to Start</h1>
-
-    <div class="boxes">
-      <div class="row">
-        <div type="button" id="green" class="btn green"></div>
-        <div type="button" id="red" class="btn red"></div>
-      </div>
-      <div class="row">
-        <div type="button" id="yellow" class="btn yellow"></div>
-        <div type="button" id="blue" class="btn blue"></div>
-      </div>
-    </div>
-
+    <main role="main">
+      <h1 id="title" tabindex="0">Press A key to Start</h1>
+      <section class="game-area" aria-label="Simon Game Board">
+        <div class="boxes">
+          <div class="row">
+            <div
+              id="green"
+              class="btn green"
+              aria-label="Green Button"
+              tabindex="0"
+            ></div>
+            <div
+              id="red"
+              class="btn red"
+              aria-label="Red Button"
+              tabindex="0"
+            ></div>
+          </div>
+          <div class="row">
+            <div
+              id="yellow"
+              class="btn yellow"
+              aria-label="Yellow Button"
+              tabindex="0"
+            ></div>
+            <div
+              id="blue"
+              class="btn blue"
+              aria-label="Blue Button"
+              tabindex="0"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>
